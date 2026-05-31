@@ -19,9 +19,20 @@ Simple ASP.NET Web Forms site used to display Pinewood Derby race information an
 
 1. Check out this repository to:
 	 `C:\PinewoodDerby`
-2. Open Command Prompt as Administrator.
-3. From the project folder, run:
+2. Obtain the Pinewood.mdb database and place into `C:\PinewoodDerby`
+3. Open Command Prompt as Administrator.
+4. From the project folder, run:
 	 `RunIISExpress.cmd`
+
+## Accessing the site remotely
+The main idea here is to allow remote registration so the race computer is free to be setup at the race table and able to perform track testing, etc.
+
+1. Ensure both computers are connected to a common Wifi (we use a dedicated WiFi router with a "Pinewood Track" SSID)
+2. Ensure firewall is configured on race PC to accept port 80 traffic
+	a. Press Win + R and run wf.msc
+	b. Under Inbound rules, enable or add rule for TCP port 80
+3. Run ipconfig on command line to determine IP
+4. Access site pages listed below but using IP address (or machine name) of race computer
 
 ## Site Pages
 
